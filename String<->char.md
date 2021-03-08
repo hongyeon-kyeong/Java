@@ -20,7 +20,7 @@
     (1) Character 클래스 toString() 메소드 (내부적으로 String 클래스의 valueOf() 메소드 호출)
 
     ```java
-    char ch =  "A";
+    char ch =  'A';
     String str = Character.toString(ch);
     String str2 = new Character(ch).toString();
     ```
@@ -28,23 +28,23 @@
     (2) String 클래스의 valueOf() 메소드
 
     ```java
-    char ch = "A";
+    char ch = 'A';
     char[] arrChar = new char[] {'a','b','c'};
 
-    String str = String.valueOf(ch);
-    String str2 = String.valueOf(arrChar);
+    String str = String.valueOf(ch); // A
+    String str2 = String.valueOf(arrChar); // abc
     ```
 
     (3) String 클래스 생성자
 
     ```java
     char[] arrChar = new char[] {'a','b','c'};
-    String str = new String(arrChar);
+    String str = new String(arrChar); // abc
     ```
 
     (4) + 연산자
 
     ```java
-    char ch = "A";
+    char ch = 'A';
     String str = ch + "";
     ```
